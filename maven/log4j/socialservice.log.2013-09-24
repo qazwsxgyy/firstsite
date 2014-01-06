@@ -1,0 +1,378 @@
+2013-09-24 09:41:51  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-24 09:41:51  [ main:156 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Tue Sep 24 09:41:51 CST 2013]; root of context hierarchy
+2013-09-24 09:41:52  [ main:281 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-24 09:41:52  [ main:1172 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1144823: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-24 09:41:52  [ main:1234 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-24 09:41:53  [ main:2078 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2078 ms
+2013-09-24 09:41:53  [ main:2203 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-24 09:41:53  [ main:2203 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Tue Sep 24 09:41:53 CST 2013]; parent: Root WebApplicationContext
+2013-09-24 09:41:53  [ main:2203 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-24 09:41:54  [ main:3219 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1756456: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1144823
+2013-09-24 09:41:55  [ main:3297 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-24 09:41:55  [ main:3297 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-24 09:41:55  [ main:3297 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:3328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-24 09:41:55  [ main:4062 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 1859 ms
+2013-09-24 10:03:13  [ http-8080-1:1281969 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/installcapacity?&mode=week ip:127.0.0.1 port:2786
+2013-09-24 10:05:57  [ http-8080-1:1446031 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/installcapacity?&mode=month ip:127.0.0.1 port:2901
+2013-09-24 10:16:28  [ http-8080-1:2077047 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/os?&mode=month ip:127.0.0.1 port:2993
+2013-09-24 10:23:09  [ http-8080-1:2477562 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosdk?&mode=month ip:127.0.0.1 port:3031
+2013-09-24 10:24:35  [ http-8080-1:2563375 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidsdk?&mode=month ip:127.0.0.1 port:3042
+2013-09-24 10:25:45  [ http-8080-1:2633281 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosversion?&mode=month ip:127.0.0.1 port:3052
+2013-09-24 10:26:40  [ http-8080-1:2688609 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidversion?&mode=month ip:127.0.0.1 port:3052
+2013-09-24 10:27:55  [ http-8080-1:2763422 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosmodel?&mode=month ip:127.0.0.1 port:3078
+2013-09-24 10:29:37  [ http-8080-1:2865359 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidmodel?&mode=month ip:127.0.0.1 port:3102
+2013-09-24 10:46:54  [ http-8080-1:3902469 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1379990810iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:51082
+2013-09-24 10:46:55  [ http-8080-2:3903469 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1379990810iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:51081
+2013-09-24 10:46:55  [ http-8080-3:3903469 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1379990810iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:51080
+2013-09-24 10:46:55  [ http-8080-2:3903531 ] - [ INFO ]  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2013-09-24 10:46:55  [ http-8080-2:3903578 ] - [ INFO ]  SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2013-09-24 10:46:55  [ http-8080-2:3903594 ] - [ INFO ]  Unexpect Exception
+org.springframework.dao.DuplicateKeyException: SqlMapClient operation; SQL [];   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:241)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.insert(SqlMapClientTemplate.java:364)
+	at info.anchora.mobilemonitor.dao.impl.InstallInfoDaoImpl.addInstallInfo(InstallInfoDaoImpl.java:13)
+	at info.anchora.mobilemonitor.service.impl.InstallInfoServiceImpl.addInstallInfo(InstallInfoServiceImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy17.addInstallInfo(Unknown Source)
+	at info.anchora.mobilemonitor.controller.MonitorController.create(MonitorController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:560)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$8.doInSqlMapClient(SqlMapClientTemplate.java:366)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 44 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1039)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2624)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2127)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1362)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 48 more
+2013-09-24 10:46:55  [ http-8080-3:3903594 ] - [ INFO ]  Unexpect Exception
+org.springframework.dao.DuplicateKeyException: SqlMapClient operation; SQL [];   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:241)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.insert(SqlMapClientTemplate.java:364)
+	at info.anchora.mobilemonitor.dao.impl.InstallInfoDaoImpl.addInstallInfo(InstallInfoDaoImpl.java:13)
+	at info.anchora.mobilemonitor.service.impl.InstallInfoServiceImpl.addInstallInfo(InstallInfoServiceImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy17.addInstallInfo(Unknown Source)
+	at info.anchora.mobilemonitor.controller.MonitorController.create(MonitorController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:560)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$8.doInSqlMapClient(SqlMapClientTemplate.java:366)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 44 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1379990810iPhone Simulator' for key 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1039)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2624)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2127)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1362)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 48 more
+2013-09-24 10:50:58  [ http-8080-3:4146906 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1379991054iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:51130
+2013-09-24 10:51:37  [ http-8080-3:4186078 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1379991094iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:51134
+2013-09-24 11:03:42  [ http-8080-3:4910297 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1379991094iPhone Simulator","launch_date":"2013-09-24"}} ip:192.168.1.217 port:51281
+2013-09-24 11:13:39  [ http-8080-3:5508203 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1379991094iPhone Simulator","launch_date":"2013-09-24"}} ip:192.168.1.217 port:51303
+2013-09-24 11:13:41  [ http-8080-2:5509672 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1379991094iPhone Simulator","launch_date":"2013-09-24"}} ip:192.168.1.217 port:51302
+2013-09-24 11:14:02  [ http-8080-2:5530437 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1379991094iPhone Simulator","launch_date":"2013-09-24"}} ip:192.168.1.217 port:51307
+2013-09-24 11:14:14  [ http-8080-2:5542562 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1379991094iPhone Simulator","launch_date":"2013-09-24"}} ip:192.168.1.217 port:51316
+2013-09-24 11:18:59  [ http-8080-2:5827375 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1379991094iPhone Simulator","launch_date":"2013-09-24"}} ip:192.168.1.217 port:51327
+2013-09-24 11:21:21  [ http-8080-2:5969797 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1379991094iPhone Simulator","launch_date":"2013-09-24"}} ip:192.168.1.217 port:51331
+2013-09-24 11:25:01  [ http-8080-2:6189875 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1379993064iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:51339
+2013-09-24 15:48:40  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-24 15:48:40  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Tue Sep 24 15:48:40 CST 2013]; root of context hierarchy
+2013-09-24 15:48:40  [ main:125 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-24 15:48:41  [ main:547 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1263b07: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-24 15:48:41  [ main:594 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-24 15:48:42  [ main:1141 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1125 ms
+2013-09-24 15:48:42  [ main:1187 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-24 15:48:42  [ main:1187 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Tue Sep 24 15:48:42 CST 2013]; parent: Root WebApplicationContext
+2013-09-24 15:48:42  [ main:1203 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-24 15:48:42  [ main:1609 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5f3bad: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1263b07
+2013-09-24 15:48:42  [ main:1656 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-24 15:48:42  [ main:1656 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-24 15:48:42  [ main:1656 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-24 15:48:42  [ main:1656 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1672 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:1687 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-24 15:48:42  [ main:2062 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 875 ms
+2013-09-24 15:48:59  [ http-8080-2:18422 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53182
+2013-09-24 15:48:59  [ http-8080-1:18422 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1380003480testIphone","os":"iOS","deviceid":"0:21:f2:1:3e:28","ios_version":"6.1.3","brands":"Apple","model":"iPhone 3GS","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.111 port:53181
+2013-09-24 15:49:38  [ http-8080-2:57969 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53210
+2013-09-24 15:54:23  [ http-8080-2:342359 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53240
+2013-09-24 15:55:10  [ http-8080-2:390078 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53267
+2013-09-24 15:57:11  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-24 15:57:11  [ main:46 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Tue Sep 24 15:57:11 CST 2013]; root of context hierarchy
+2013-09-24 15:57:11  [ main:109 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-24 15:57:12  [ main:437 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-24 15:57:12  [ main:468 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-24 15:57:12  [ main:843 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 843 ms
+2013-09-24 15:57:12  [ main:890 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-24 15:57:12  [ main:890 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Tue Sep 24 15:57:12 CST 2013]; parent: Root WebApplicationContext
+2013-09-24 15:57:12  [ main:890 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-24 15:57:13  [ main:1203 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ef1df6: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a
+2013-09-24 15:57:13  [ main:1265 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-24 15:57:13  [ main:1265 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-24 15:57:13  [ main:1265 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-24 15:57:13  [ main:1265 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-24 15:57:13  [ main:1265 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1296 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-24 15:57:13  [ main:1687 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 797 ms
+2013-09-24 15:59:51  [ http-8080-1:159203 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53296
+2013-09-24 16:00:05  [ http-8080-2:173750 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380009545294","launch_date":"2013-09-24",}} ip:192.168.1.3 port:48865
+2013-09-24 16:00:08  [ http-8080-3:176718 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380009545294","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:57944
+2013-09-24 16:01:55  [ http-8080-3:283140 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380009654696","launch_date":"2013-09-24",}} ip:192.168.1.3 port:43041
+2013-09-24 16:01:55  [ http-8080-2:283140 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380009654696","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:46435
+2013-09-24 16:03:25  [ http-8080-2:373828 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53324
+2013-09-24 16:05:03  [ http-8080-2:472046 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53353
+2013-09-24 16:05:04  [ http-8080-3:472125 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53354
+2013-09-24 16:07:18  [ http-8080-3:606296 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53382
+2013-09-24 16:10:06  [ http-8080-3:774296 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1380010144iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:52817
+2013-09-24 16:10:51  [ http-8080-3:819359 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380010189165","launch_date":"2013-09-24",}} ip:192.168.1.3 port:36146
+2013-09-24 16:10:51  [ http-8080-2:819359 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380010189165","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:57894
+2013-09-24 16:11:59  [ http-8080-2:888093 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380010257891","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:54408
+2013-09-24 16:11:59  [ http-8080-3:888093 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380010257891","launch_date":"2013-09-24",}} ip:192.168.1.3 port:42425
+2013-09-24 16:12:53  [ http-8080-1:941421 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380010144iPhone Simulator","launch_date":"2013-09-25"}} ip:192.168.1.217 port:52871
+2013-09-24 16:13:25  [ http-8080-2:973359 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380010342816","launch_date":"2013-09-24",}} ip:192.168.1.3 port:59355
+2013-09-24 16:13:25  [ http-8080-3:973375 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380010342816","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:36916
+2013-09-24 16:16:03  [ http-8080-3:1131359 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380010499941","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:58016
+2013-09-24 16:16:03  [ http-8080-2:1131359 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380010499941","launch_date":"2013-09-24",}} ip:192.168.1.3 port:38203
+2013-09-24 16:22:22  [ http-8080-2:1510468 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380003480testIphone","launch_date":"2013-09-24"}} ip:192.168.1.111 port:53412
+2013-09-24 16:32:28  [ http-8080-2:2116968 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380011483619","launch_date":"2013-09-24",}} ip:192.168.1.3 port:52193
+2013-09-24 16:32:28  [ http-8080-3:2116968 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380011483619","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:46135
+2013-09-24 16:35:56  [ http-8080-3:2324718 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380011691186","launch_date":"2013-09-24",}} ip:192.168.1.3 port:54604
+2013-09-24 16:35:56  [ http-8080-2:2324734 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380011691186","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:50510
+2013-09-24 16:41:19  [ http-8080-2:2647437 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380012077647","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:45506
+2013-09-24 16:41:19  [ http-8080-3:2647515 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380012077647","launch_date":"2013-09-24",}} ip:192.168.1.3 port:42753
+2013-09-24 16:47:58  [ http-8080-3:3046750 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380012476526","launch_date":"2013-09-24",}} ip:192.168.1.3 port:59567
+2013-09-24 16:48:01  [ http-8080-2:3049718 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380012476526","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:54215
+2013-09-24 16:56:31  [ http-8080-3:3559875 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1380012990iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:53069
+2013-09-24 17:00:20  [ http-8080-3:3789046 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1380013218iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:53148
+2013-09-24 17:01:24  [ http-8080-3:3852937 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"1380013218iPhone Simulator","launch_date":"2013-09-25"}} ip:192.168.1.217 port:53162
+2013-09-24 17:02:26  [ http-8080-3:3914625 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"8606710205351561380013343352","launch_date":"2013-09-24",}} ip:192.168.1.3 port:39331
+2013-09-24 17:02:26  [ http-8080-2:3914640 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"8606710205351561380013343352","os":"android","deviceid":"860671020535156","android_version":"4.2.1","brands":"Xiaomi","model":"2013022","sdk_version":"1.1.1",}} ip:192.168.1.3 port:56162
+2013-09-24 17:14:16  [ http-8080-2:4624906 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1380014052iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:53194
+2013-09-24 17:16:11  [ http-8080-2:4739937 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1380014167iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:53203
+2013-09-24 17:17:09  [ http-8080-2:4797375 ] - [ INFO ]  requestUrl:http://192.168.1.221:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1380014225iPhone Simulator","os":"iOS","deviceid":"Not Found","ios_version":"6.1","brands":"Apple","model":"x86_64","sdk_version":"1.0","socialkey":"9feb186590dd4ac1a5079df","iospushkey":"(null)","locationkey":"(null)"}} ip:192.168.1.217 port:53208

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	<mvc:default-servlet-handler />
+	<!-- 该 BeanPostProcessor 将自动对标注 @Autowired 的 Bean 进行注入 -->
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		
+		<!-- <property name="username">
+			<value>root</value>			
+		</property>
+		<property name="password">
+			<value>anchora</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://127.0.0.1:3306/sdkmonitor?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</value>
+		</property>
+		
+		<property name="username">
+			<value>${MOPAAS_MYSQL1241_USERNAME}</value>			
+		</property>
+		<property name="password">
+			<value>${MOPAAS_MYSQL1241_PASSWORD}</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://${MOPAAS_MYSQL1241_HOST}:${MOPAAS_MYSQL1241_PORT}/${MOPAAS_MYSQL1241_NAME}?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</value>
+		</property> -->
+		
+		<property name="username">
+			<value>${MOPAAS_MYSQL5943_USERNAME}</value>			
+		</property>
+		<property name="password">
+			<value>${MOPAAS_MYSQL5943_PASSWORD}</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://${MOPAAS_MYSQL5943_HOST}:${MOPAAS_MYSQL5943_PORT}/${MOPAAS_MYSQL5943_NAME}?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</value>
+		</property>
+		
+
+
+		<property name="maxActive">
+			<value>100</value>
+		</property>
+		<property name="maxIdle">
+			<value>50</value>
+		</property>
+		<property name="maxWait">
+			<value>10000</value>
+		</property>
+
+		<property name="timeBetweenEvictionRunsMillis">
+			<value>7200000</value><!--1 hours -->
+		</property>
+		<!-- <property name="minEvictableIdleTimeMillis"> <value>20000</value> 
+			</property> -->
+
+		<property name="testWhileIdle">
+			<value>true</value>
+		</property>
+		<property name="validationQuery">
+			<value>select 1 from dual</value>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="transactionInterceptor"
+		class="org.springframework.transaction.interceptor.TransactionInterceptor">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED, -Exception</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean
+		class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<property name="beanNames">
+			<list>
+				<value>*Service</value>
+			</list>
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>transactionInterceptor</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<!-- 此处应注入ibatis配置文件，而非sqlMap文件，否则会出现“there is no statement.....异常” -->
+		<property name="configLocation">
+			<value>classpath:config/SqlMapConfig.xml</value>
+		</property>
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="mysqlDao" class="info.anchora.mobilemonitor.dao.impl.MySQLDaoImpl">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient" />
+		</property>
+	</bean>
+	
+	<bean id="ActivityInfoDao" class="info.anchora.mobilemonitor.dao.impl.ActivityInfoDaoImpl">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient" />
+		</property>
+	</bean>
+	
+	<bean id="InstallInfoDao" class="info.anchora.mobilemonitor.dao.impl.InstallInfoDaoImpl">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient" />
+		</property>
+	</bean>
+	
+	<bean id="MonitorStatisticsDao" class="info.anchora.mobilemonitor.dao.impl.MonitorStatisticsDaoImpl">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient" />
+		</property>
+	</bean>
+	
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 以字节为单位的最大上传文件的大小 -->
+		<property name="maxUploadSize" value="4000000" />
+	</bean>
+	
+	<!-- 配置Service Bean -->
+	<bean id="ActivityInfoService" class="info.anchora.mobilemonitor.service.impl.ActivityInfoServiceImpl" />
+	<bean id="InstallInfoService" class="info.anchora.mobilemonitor.service.impl.InstallInfoServiceImpl" />
+	<bean id="MonitorStatisticsService" class="info.anchora.mobilemonitor.service.impl.MonitorStatisticsServiceImpl"></bean>
+
+</beans>

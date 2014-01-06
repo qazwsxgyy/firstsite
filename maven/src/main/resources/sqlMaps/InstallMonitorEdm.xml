@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="InstallMonitorEdm">
+	<typeAlias alias="InstallMonitorEdm"
+		type="info.anchora.mobilemonitor.entiry.InstallMonitorEntiry" />
+
+	<insert id="addInstallMonitor" parameterClass="InstallMonitorEdm">
+		INSERT INTO
+		install_monitor(uid,os,deviceid,installdate,sdk_version,ios_version,android_version,brands,model,socialkey,androidpushkey,iospushkey,locationkey)
+		VALUES(#uid#,#os#,#deviceid#,#installdate#,#sdk_version#,#ios_version#,#android_version#,#brands#,#model#,#socialkey#,#androidpushkey#,#iospushkey#,#locationkey#)
+	</insert>
+	
+	
+	
+</sqlMap>

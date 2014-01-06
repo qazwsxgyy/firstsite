@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="mysqlEdm">
+	<typeAlias alias="mysqlEdm"
+		type="info.anchora.socialservice.entiry.SocialServiceViewEntiry" />
+
+	<statement id="CT_install_monitor">
+		CREATE TABLE IF NOT EXISTS `install_monitor`
+		(
+		    `uid` varchar(32) NOT NULL,
+		    `os` varchar(11) NOT NULL,
+		    `deviceid` varchar(32) NOT NULL ,
+		    `installdate` Date NOT NULL,
+		    `sdk_version` varchar(11) NOT NULL,
+		    `ios_version` varchar(11) DEFAULT NULL,
+		    `android_version` varchar(11) DEFAULT NULL,
+		    `brands` varchar(11) NOT NULL,
+		    `model` varchar(11) NOT NULL,
+		    `socialkey` varchar(32) DEFAULT NULL,
+		    `androidpushkey` varchar(32) DEFAULT NULL,
+		    `iospushkey` varchar(32) DEFAULT NULL,
+		    `locationkey` varchar(32) DEFAULT NULL,		    
+		     PRIMARY KEY (`uid`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+	</statement>
+	
+	<statement id="CT_activity_monitor">
+		CREATE TABLE IF NOT EXISTS `activity_monitor`
+		(
+		    `autokey` int(11) NOT NULL AUTO_INCREMENT,
+		    `uid` varchar(32) NOT NULL,
+		    `launch_date` varchar(255) NOT NULL ,
+		     PRIMARY KEY (`autokey`)
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+	</statement>
+	
+
+</sqlMap>

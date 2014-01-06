@@ -1,0 +1,935 @@
+2013-09-26 11:14:20  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 11:14:20  [ main:78 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 11:14:20 CST 2013]; root of context hierarchy
+2013-09-26 11:14:20  [ main:140 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 11:14:21  [ main:687 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1455cf4: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 11:14:21  [ main:734 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 11:14:21  [ main:1218 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1203 ms
+2013-09-26 11:14:21  [ main:1296 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 11:14:21  [ main:1312 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 11:14:21 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 11:14:21  [ main:1312 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 11:14:22  [ main:1734 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f33c1: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1455cf4
+2013-09-26 11:14:22  [ main:1781 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 11:14:22  [ main:1781 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 11:14:22  [ main:1781 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 11:14:22  [ main:1796 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 11:14:22  [ main:1796 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 11:14:22  [ main:1796 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1812 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:1828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 11:14:22  [ main:2500 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 1188 ms
+2013-09-26 11:15:02  [ http-8080-1:42265 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/installcapacity?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:15:38  [ http-8080-1:77890 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/os?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:15:41  [ http-8080-1:80968 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/os?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:15:45  [ http-8080-1:85531 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/os?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:15:52  [ http-8080-1:91843 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/os?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:16:10  [ http-8080-1:109953 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosdk?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:16:13  [ http-8080-1:113390 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosdk?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:16:26  [ http-8080-1:126140 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidsdk?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:16:30  [ http-8080-1:129796 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidsdk?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:16:58  [ http-8080-1:158515 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosversion?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:17:01  [ http-8080-1:161531 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosversion?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:17:27  [ http-8080-1:187515 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidversion?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:17:30  [ http-8080-1:189937 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidversion?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:17:43  [ http-8080-1:202765 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosmodel?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:17:48  [ http-8080-1:208343 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/iosmodel?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:17:59  [ http-8080-1:219562 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidmodel?&mode=weeks ip:127.0.0.1 port:3324
+2013-09-26 11:18:02  [ http-8080-1:221859 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/androidmodel?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:18:11  [ http-8080-1:231046 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=week ip:127.0.0.1 port:3324
+2013-09-26 11:18:12  [ http-8080-1:232250 ] - [ INFO ]  Unexpect Exception
+java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at info.anchora.mobilemonitor.httpclient.BaseHttpClient.HttpPostMethod(BaseHttpClient.java:69)
+	at info.anchora.mobilemonitor.service.impl.MonitorStatisticsServiceImpl.getDeveloper(MonitorStatisticsServiceImpl.java:334)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy18.getDeveloper(Unknown Source)
+	at info.anchora.mobilemonitor.controller.MonitorStatisticsController.developer(MonitorStatisticsController.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+2013-09-26 13:36:56  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 13:36:56  [ main:94 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 13:36:56 CST 2013]; root of context hierarchy
+2013-09-26 13:36:56  [ main:188 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 13:36:56  [ main:735 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15daa9e: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 13:36:56  [ main:766 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 13:36:57  [ main:1250 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1234 ms
+2013-09-26 13:36:57  [ main:1297 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 13:36:57  [ main:1297 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 13:36:57 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 13:36:57  [ main:1297 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 13:36:58  [ main:2375 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12e7234: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@15daa9e
+2013-09-26 13:36:58  [ main:2422 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 13:36:58  [ main:2422 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 13:36:58  [ main:2422 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 13:36:58  [ main:2438 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 13:36:58  [ main:2438 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 13:36:58  [ main:2438 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2454 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:58  [ main:2469 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:36:59  [ main:3141 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 1844 ms
+2013-09-26 13:37:44  [ http-8080-1:48219 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=week ip:127.0.0.1 port:2967
+2013-09-26 13:37:46  [ http-8080-1:50047 ] - [ INFO ]  Unexpect Exception
+net.sf.json.JSONException: null object
+	at net.sf.json.JSONObject.verifyIsNull(JSONObject.java:2498)
+	at net.sf.json.JSONObject.getString(JSONObject.java:1842)
+	at info.anchora.mobilemonitor.service.impl.MonitorStatisticsServiceImpl.getDeveloper(MonitorStatisticsServiceImpl.java:338)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy18.getDeveloper(Unknown Source)
+	at info.anchora.mobilemonitor.controller.MonitorStatisticsController.developer(MonitorStatisticsController.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+2013-09-26 13:45:40  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 13:45:40  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 13:45:40 CST 2013]; root of context hierarchy
+2013-09-26 13:45:40  [ main:109 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 13:45:40  [ main:438 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 13:45:40  [ main:484 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 13:45:41  [ main:813 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 813 ms
+2013-09-26 13:45:41  [ main:891 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 13:45:41  [ main:891 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 13:45:41 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 13:45:41  [ main:891 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 13:45:41  [ main:1203 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e265f5: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d
+2013-09-26 13:45:41  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 13:45:41  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 13:45:41  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 13:45:41  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 13:45:41  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 13:45:41  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:41  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:45:42  [ main:1672 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 781 ms
+2013-09-26 13:46:06  [ http-8080-1:25766 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=week ip:127.0.0.1 port:3054
+2013-09-26 13:46:06  [ http-8080-1:26500 ] - [ INFO ]  Unexpect Exception
+net.sf.json.JSONException: JSONObject["123"] is not a JSONObject.
+	at net.sf.json.JSONObject.getJSONObject(JSONObject.java:1813)
+	at info.anchora.mobilemonitor.service.impl.MonitorStatisticsServiceImpl.getDeveloper(MonitorStatisticsServiceImpl.java:337)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy18.getDeveloper(Unknown Source)
+	at info.anchora.mobilemonitor.controller.MonitorStatisticsController.developer(MonitorStatisticsController.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+2013-09-26 13:49:33  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 13:49:33  [ main:63 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 13:49:33 CST 2013]; root of context hierarchy
+2013-09-26 13:49:33  [ main:141 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 13:49:34  [ main:484 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 13:49:34  [ main:547 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 13:49:34  [ main:891 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 891 ms
+2013-09-26 13:49:34  [ main:938 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 13:49:34  [ main:938 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 13:49:34 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 13:49:34  [ main:938 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 13:49:34  [ main:1234 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d1afd3: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a
+2013-09-26 13:49:34  [ main:1281 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 13:49:34  [ main:1281 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 13:49:34  [ main:1281 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 13:49:34  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 13:49:34  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 13:49:34  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 13:49:34  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:34  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:49:35  [ main:1703 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 765 ms
+2013-09-26 13:49:39  [ http-8080-1:5531 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=week ip:127.0.0.1 port:3077
+2013-09-26 13:49:40  [ http-8080-1:7234 ] - [ INFO ]  Unexpect Exception
+net.sf.json.JSONException: JSONObject["123"] is not a JSONObject.
+	at net.sf.json.JSONObject.getJSONObject(JSONObject.java:1813)
+	at info.anchora.mobilemonitor.service.impl.MonitorStatisticsServiceImpl.getDeveloper(MonitorStatisticsServiceImpl.java:337)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy18.getDeveloper(Unknown Source)
+	at info.anchora.mobilemonitor.controller.MonitorStatisticsController.developer(MonitorStatisticsController.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+2013-09-26 13:50:21  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 13:50:21  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 13:50:21 CST 2013]; root of context hierarchy
+2013-09-26 13:50:21  [ main:110 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 13:50:22  [ main:422 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 13:50:22  [ main:469 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 13:50:22  [ main:828 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 812 ms
+2013-09-26 13:50:22  [ main:875 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 13:50:22  [ main:875 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 13:50:22 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 13:50:22  [ main:891 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 13:50:22  [ main:1188 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ef1df6: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d
+2013-09-26 13:50:22  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 13:50:22  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 13:50:22  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 13:50:22  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 13:50:22  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 13:50:22  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 13:50:22  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:22  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 13:50:23  [ main:1719 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 844 ms
+2013-09-26 13:50:26  [ http-8080-1:4485 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=week ip:127.0.0.1 port:3086
+2013-09-26 13:53:22  [ http-8080-1:181156 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3128
+2013-09-26 14:07:28  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:07:28  [ main:31 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:07:28 CST 2013]; root of context hierarchy
+2013-09-26 14:07:28  [ main:110 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:07:29  [ main:516 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1edf84f: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:07:29  [ main:563 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:07:29  [ main:906 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 906 ms
+2013-09-26 14:07:29  [ main:938 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:07:29  [ main:953 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:07:29 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:07:29  [ main:953 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:07:30  [ main:1250 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b8099a: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1edf84f
+2013-09-26 14:07:30  [ main:1297 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:07:30  [ main:1297 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:07:30  [ main:1297 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:07:30  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:07:30  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:07:30  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1344 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:07:30  [ main:1750 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 812 ms
+2013-09-26 14:07:36  [ http-8080-1:8219 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3270
+2013-09-26 14:14:22  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:14:22  [ main:63 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:14:22 CST 2013]; root of context hierarchy
+2013-09-26 14:14:22  [ main:125 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:14:23  [ main:438 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:14:23  [ main:469 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:14:23  [ main:828 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 828 ms
+2013-09-26 14:14:23  [ main:875 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:14:23  [ main:875 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:14:23 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:14:23  [ main:891 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:14:23  [ main:1188 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6d75b6: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d
+2013-09-26 14:14:23  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:14:23  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:14:23  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:14:23  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:23  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:14:24  [ main:1657 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 782 ms
+2013-09-26 14:14:39  [ http-8080-1:16750 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3334
+2013-09-26 14:16:27  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:16:27  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:16:27 CST 2013]; root of context hierarchy
+2013-09-26 14:16:27  [ main:125 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:16:27  [ main:453 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:16:27  [ main:500 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:16:27  [ main:844 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 828 ms
+2013-09-26 14:16:27  [ main:875 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:16:27  [ main:891 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:16:27 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:16:27  [ main:891 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:16:28  [ main:1188 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44ac5e: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a
+2013-09-26 14:16:28  [ main:1235 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:16:28  [ main:1235 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:16:28  [ main:1235 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:16:28  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:16:28  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:16:28  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:16:28  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:16:28  [ main:1672 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 797 ms
+2013-09-26 14:16:34  [ http-8080-1:7453 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3362
+2013-09-26 14:18:29  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:18:29  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:18:29 CST 2013]; root of context hierarchy
+2013-09-26 14:18:29  [ main:110 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:18:29  [ main:407 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:18:29  [ main:485 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:18:30  [ main:844 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 844 ms
+2013-09-26 14:18:30  [ main:875 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:18:30  [ main:891 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:18:30 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:18:30  [ main:891 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:18:30  [ main:1203 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@992725: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5e9d7a
+2013-09-26 14:18:30  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:18:30  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:18:30  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:18:30  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:30  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:18:31  [ main:1672 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 797 ms
+2013-09-26 14:18:46  [ http-8080-1:16828 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3391
+2013-09-26 14:22:50  [ http-8080-1:260844 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3484
+2013-09-26 14:23:45  [ http-8080-1:316172 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3484
+2013-09-26 14:24:38  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:24:38  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:24:38 CST 2013]; root of context hierarchy
+2013-09-26 14:24:38  [ main:109 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:24:39  [ main:422 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@14b03ea: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:24:39  [ main:468 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:24:39  [ main:843 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 843 ms
+2013-09-26 14:24:39  [ main:890 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:24:39  [ main:890 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:24:39 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:24:39  [ main:890 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:24:40  [ main:1203 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@106121: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@14b03ea
+2013-09-26 14:24:40  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:24:40  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:24:40  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:24:40  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:24:40  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:24:40  [ main:1265 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:24:40  [ main:1265 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1265 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1265 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1265 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:24:40  [ main:1672 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 782 ms
+2013-09-26 14:24:44  [ http-8080-1:5547 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3506
+2013-09-26 14:29:10  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:29:10  [ main:63 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:29:10 CST 2013]; root of context hierarchy
+2013-09-26 14:29:10  [ main:125 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:29:11  [ main:438 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:29:11  [ main:484 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:29:11  [ main:844 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 828 ms
+2013-09-26 14:29:11  [ main:891 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:29:11  [ main:891 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:29:11 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:29:11  [ main:906 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:29:11  [ main:1203 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@605b1e: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d
+2013-09-26 14:29:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:29:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:29:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:29:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:29:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1328 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:29:12  [ main:1703 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 812 ms
+2013-09-26 14:29:22  [ http-8080-1:11719 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3553
+2013-09-26 14:34:14  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:34:14  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:34:14 CST 2013]; root of context hierarchy
+2013-09-26 14:34:15  [ main:125 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:34:15  [ main:453 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b4cd65: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:34:15  [ main:500 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:34:15  [ main:859 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 859 ms
+2013-09-26 14:34:15  [ main:891 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:34:15  [ main:906 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:34:15 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:34:15  [ main:906 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:34:16  [ main:1219 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16b277f: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b4cd65
+2013-09-26 14:34:16  [ main:1266 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:34:16  [ main:1266 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:34:16  [ main:1266 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:34:16  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:34:16  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:34:16  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:34:16  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1313 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:34:16  [ main:1688 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 797 ms
+2013-09-26 14:34:25  [ http-8080-1:10219 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3800
+2013-09-26 14:38:30  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:38:30  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:38:30 CST 2013]; root of context hierarchy
+2013-09-26 14:38:30  [ main:109 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:38:30  [ main:437 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d316fd: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:38:30  [ main:484 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:38:30  [ main:843 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 843 ms
+2013-09-26 14:38:30  [ main:890 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:38:30  [ main:890 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:38:30 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:38:30  [ main:890 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:38:31  [ main:1218 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c70af9: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1d316fd
+2013-09-26 14:38:31  [ main:1265 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:38:31  [ main:1265 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:38:31  [ main:1265 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:38:31  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:38:31  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:38:31  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:38:31  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:38:31  [ main:1703 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 813 ms
+2013-09-26 14:38:37  [ http-8080-1:7312 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3836
+2013-09-26 14:40:12  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:40:12  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:40:12 CST 2013]; root of context hierarchy
+2013-09-26 14:40:12  [ main:109 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:40:12  [ main:437 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:40:12  [ main:469 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:40:13  [ main:844 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 828 ms
+2013-09-26 14:40:13  [ main:891 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:40:13  [ main:891 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:40:13 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:40:13  [ main:906 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:40:13  [ main:1203 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1438dbe: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d
+2013-09-26 14:40:13  [ main:1266 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:40:13  [ main:1266 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:40:13  [ main:1266 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1281 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1297 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:13  [ main:1312 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:40:14  [ main:1687 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 796 ms
+2013-09-26 14:40:17  [ http-8080-1:5594 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3856
+2013-09-26 14:41:28  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 14:41:28  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:41:28 CST 2013]; root of context hierarchy
+2013-09-26 14:41:28  [ main:110 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 14:41:28  [ main:438 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 14:41:28  [ main:485 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 14:41:29  [ main:844 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 844 ms
+2013-09-26 14:41:29  [ main:875 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 14:41:29  [ main:891 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 14:41:29 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 14:41:29  [ main:891 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 14:41:29  [ main:1203 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c0adca: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1876e5d
+2013-09-26 14:41:29  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 14:41:29  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 14:41:29  [ main:1250 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 14:41:29  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 14:41:29  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 14:41:29  [ main:1250 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1266 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:29  [ main:1282 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 14:41:30  [ main:1657 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 782 ms
+2013-09-26 14:41:35  [ http-8080-1:6750 ] - [ INFO ]  requestUrl:http://localhost:8080/api/getmonitorinfo/developer?&mode=month ip:127.0.0.1 port:3876
+2013-09-26 16:19:43  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-26 16:19:44  [ main:109 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Thu Sep 26 16:19:44 CST 2013]; root of context hierarchy
+2013-09-26 16:19:44  [ main:234 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-26 16:19:45  [ main:1125 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c03d7b: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,MonitorStatisticsDao,multipartResolver,ActivityInfoService,InstallInfoService,MonitorStatisticsService]; root of factory hierarchy
+2013-09-26 16:19:45  [ main:1219 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-26 16:19:45  [ main:2015 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2000 ms
+2013-09-26 16:19:46  [ main:2156 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-26 16:19:46  [ main:2156 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Thu Sep 26 16:19:46 CST 2013]; parent: Root WebApplicationContext
+2013-09-26 16:19:46  [ main:2156 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-26 16:19:46  [ main:2672 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c0d32e: defining beans [dataBaseInitController,monitorController,monitorStatisticsController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c03d7b
+2013-09-26 16:19:46  [ main:2797 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-26 16:19:46  [ main:2797 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-26 16:19:46  [ main:2797 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-26 16:19:46  [ main:2812 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'monitorController'
+2013-09-26 16:19:46  [ main:2812 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'monitorController'
+2013-09-26 16:19:46  [ main:2812 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'monitorController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/developer/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/installcapacity/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/os/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosdk/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2828 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidsdk/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosversion/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidversion/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/iosmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel.*] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:46  [ main:2844 ] - [ INFO ]  Mapped URL path [/api/getmonitorinfo/androidmodel/] onto handler 'monitorStatisticsController'
+2013-09-26 16:19:47  [ main:3734 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 1578 ms

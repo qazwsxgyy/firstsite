@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE sqlMapConfig      
+     PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"      
+     "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+	<settings useStatementNamespaces="true" cacheModelsEnabled="true"
+		enhancementEnabled="true" lazyLoadingEnabled="true" maxRequests="64"
+		maxSessions="20" maxTransactions="10" />
+	<!--Configure a built-in transaction manager. If you're using an app server, 
+		you probably want to use its transaction manager and a managed datasource -->
+	<!-- <transactionManager type="JDBC" commitRequired="false">
+		<dataSource type="SIMPLE">
+			<property name="JDBC.Driver" value="com.mysql.jdbc.Driver" />
+			<property name="JDBC.ConnectionURL" value="jdbc:mysql://192.168.1.55:3306/saas" />
+			<property name="JDBC.Username" value="root" />
+			<property name="JDBC.Password" value="123456" />
+		</dataSource>
+	</transactionManager>
+	 -->
+	<sqlMap resource="sqlMaps/MySQL.xml" />
+	<sqlMap resource="sqlMaps/InstallMonitorEdm.xml" />
+	<sqlMap resource="sqlMaps/ActivityEdm.xml" />
+	<sqlMap resource="sqlMaps/MonitorStatisticsEdm.xml"/>
+</sqlMapConfig>

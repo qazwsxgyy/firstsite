@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="MonitorStatisticsEdm">
+	<typeAlias alias="MonitorStatisticsEdm" type="info.anchora.mobilemonitor.entiry.MonitorStatisticsEntiry" />
+	<typeAlias alias="OSInfoEdm" type="info.anchora.mobilemonitor.entiry.OSInfoEntiry"/>
+	<typeAlias alias="SDKVersionEdm" type="info.anchora.mobilemonitor.entiry.SDKVersionEntiry"/>
+	<typeAlias alias="iOSVersionEdm" type="info.anchora.mobilemonitor.entiry.iOSVersionEntiry"/>
+	<typeAlias alias="AndroidVersionEdm" type="info.anchora.mobilemonitor.entiry.AndroidVersionEntiry"/>
+	<typeAlias alias="ModelInfoEdm" type="info.anchora.mobilemonitor.entiry.ModelInfoEntiry"/>
+	<typeAlias alias="DeveloperInfoEdm" type="info.anchora.mobilemonitor.entiry.DevelopInfoEntiry"/>
+	
+	<select id="queryforos" parameterClass="MonitorStatisticsEdm"
+		resultClass="OSInfoEdm">
+		SELECT os,count(*) num FROM 
+		(
+		SELECT os FROM install_monitor,(SELECT activity_monitor.uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) activity
+		WHERE install_monitor.uid = activity.uid) last_table
+		GROUP BY os		
+	</select>
+	
+	<select id="queryforiosdk" parameterClass="MonitorStatisticsEdm"
+		resultClass="SDKVersionEdm">
+		SELECT sdk_version,count(*) num FROM 
+		(
+		SELECT sdk_version FROM install_monitor,(SELECT activity_monitor.uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) activity
+		WHERE install_monitor.uid = activity.uid AND install_monitor.os = 'iOS') last_table
+		GROUP BY sdk_version
+	</select>
+	
+	<select id="queryforandroidsdk" parameterClass="MonitorStatisticsEdm"
+		resultClass="SDKVersionEdm">
+		SELECT sdk_version,count(*) num FROM 
+		(
+		SELECT sdk_version FROM install_monitor,(SELECT activity_monitor.uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) activity
+		WHERE install_monitor.uid = activity.uid AND install_monitor.os = 'android') last_table
+		GROUP BY sdk_version
+	</select>
+	
+	<select id="queryforiosversion" parameterClass="MonitorStatisticsEdm"
+		resultClass="iOSVersionEdm">
+		SELECT ios_version,count(*) num FROM 
+		(
+		SELECT ios_version FROM install_monitor,(SELECT activity_monitor.uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) activity
+		WHERE install_monitor.uid = activity.uid AND install_monitor.os = 'iOS') last_table
+		GROUP BY ios_version
+	</select>
+	
+	<select id="queryforandroidversion" parameterClass="MonitorStatisticsEdm"
+		resultClass="AndroidVersionEdm">
+		SELECT android_version,count(*) num FROM 
+		(
+		SELECT android_version FROM install_monitor,(SELECT activity_monitor.uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) activity
+		WHERE install_monitor.uid = activity.uid AND install_monitor.os = 'android') last_table
+		GROUP BY android_version
+	</select>
+	
+	<select id="queryforiosmodel" parameterClass="MonitorStatisticsEdm"
+		resultClass="ModelInfoEdm">
+		SELECT brands,model,count(*) num FROM 
+		(
+		SELECT brands,model FROM install_monitor,(SELECT activity_monitor.uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) activity
+		WHERE install_monitor.uid = activity.uid AND install_monitor.os = 'iOS') last_table
+		GROUP BY model
+	</select>
+	
+	<select id="queryforandroidmodel" parameterClass="MonitorStatisticsEdm"
+		resultClass="ModelInfoEdm">
+		SELECT brands,model,count(*) num FROM 
+		(
+		SELECT brands,model FROM install_monitor,(SELECT activity_monitor.uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) activity
+		WHERE install_monitor.uid = activity.uid AND install_monitor.os = 'android') last_table
+		GROUP BY model
+		ORDER BY num DESC
+		LIMIT 0,10
+	</select>
+	
+	<select id="queryforactivity" parameterClass="MonitorStatisticsEdm"
+		resultClass="java.lang.Integer">
+		SELECT count(*) FROM 
+		(SELECT uid FROM activity_monitor 
+		WHERE <![CDATA[launch_date >= #startday#]]> AND <![CDATA[launch_date <= #stopday#]]> GROUP BY uid) newtable
+	</select>
+	
+	<select id="queryforinstall" parameterClass="MonitorStatisticsEdm"
+		resultClass="java.lang.Integer">
+		SELECT count(*) FROM 
+		(SELECT uid FROM install_monitor 
+		WHERE <![CDATA[installdate >= #startday#]]> AND <![CDATA[installdate <= #stopday#]]> GROUP BY uid) newtable
+	</select>
+	
+	<select id="queryforallinstall"
+		resultClass="java.lang.Integer">
+		SELECT count(*) FROM install_monitor
+	</select>
+	
+	<select id="queryDeveloperInfo" parameterClass="MonitorStatisticsEdm"
+		resultClass="DeveloperInfoEdm">
+		SELECT  install_monitor.socialkey,install_monitor.androidpushkey,install_monitor.iospushkey,install_monitor.locationkey,COUNT(DISTINCT install_monitor.uid) num FROM 
+		install_monitor LEFT JOIN activity_monitor ON install_monitor.uid=activity_monitor.uid WHERE <![CDATA[activity_monitor.launch_date >= #startday#]]> AND <![CDATA[activity_monitor.launch_date <= #stopday#]]>
+   		GROUP BY install_monitor.socialkey,install_monitor.androidpushkey,install_monitor.iospushkey,install_monitor.locationkey
+   		ORDER BY num DESC
+		LIMIT 0,10
+	</select>
+	
+	
+</sqlMap>

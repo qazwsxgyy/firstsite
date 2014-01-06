@@ -1,0 +1,247 @@
+2013-09-17 09:28:21  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-17 09:28:21  [ main:78 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Tue Sep 17 09:28:21 CST 2013]; root of context hierarchy
+2013-09-17 09:28:21  [ main:140 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-17 09:28:21  [ main:609 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ed65e0: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,multipartResolver,ActivityInfoService,InstallInfoService]; root of factory hierarchy
+2013-09-17 09:28:21  [ main:656 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-17 09:28:22  [ main:1062 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1062 ms
+2013-09-17 09:28:22  [ main:1125 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-17 09:28:22  [ main:1125 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Tue Sep 17 09:28:22 CST 2013]; parent: Root WebApplicationContext
+2013-09-17 09:28:22  [ main:1125 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-17 09:28:22  [ main:1687 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c492c8: defining beans [dataBaseInitController,installMonitorController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@ed65e0
+2013-09-17 09:28:22  [ main:1750 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-17 09:28:22  [ main:1750 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-17 09:28:22  [ main:1750 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-17 09:28:22  [ main:1765 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'installMonitorController'
+2013-09-17 09:28:22  [ main:1765 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'installMonitorController'
+2013-09-17 09:28:22  [ main:1765 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'installMonitorController'
+2013-09-17 09:28:23  [ main:2265 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 1140 ms
+2013-09-17 09:28:32  [ http-8080-1:11140 ] - [ INFO ]  requestUrl:http://localhost:8080/database/init? ip:127.0.0.1 port:2637
+2013-09-17 09:29:06  [ http-8080-1:45343 ] - [ INFO ]  requestUrl:http://localhost:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"123","os":"android","deviceid":"12345678","android_version":"4.0.1","brands":"HTC","model":"H7","sdk_version":"1.0","servicekey":"7654321"}} ip:127.0.0.1 port:2637
+2013-09-17 09:29:44  [ http-8080-1:83218 ] - [ INFO ]  requestUrl:http://localhost:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"123","os":"android","deviceid":"12345678","android_version":"4.0.1","brands":"HTC","model":"H7","sdk_version":"1.0","socialkey":"7654321"}} ip:127.0.0.1 port:2637
+2013-09-17 09:29:44  [ http-8080-1:83453 ] - [ INFO ]  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2013-09-17 09:29:44  [ http-8080-1:83515 ] - [ INFO ]  SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2013-09-17 09:29:44  [ http-8080-1:83531 ] - [ INFO ]  Unexpect Exception
+org.springframework.dao.DuplicateKeyException: SqlMapClient operation; SQL [];   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123' for key 1; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123' for key 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:241)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.insert(SqlMapClientTemplate.java:364)
+	at info.anchora.mobilemonitor.dao.impl.InstallInfoDaoImpl.addInstallInfo(InstallInfoDaoImpl.java:13)
+	at info.anchora.mobilemonitor.service.impl.InstallInfoServiceImpl.addInstallInfo(InstallInfoServiceImpl.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy17.addInstallInfo(Unknown Source)
+	at info.anchora.mobilemonitor.controller.InstallMonitorController.create(InstallMonitorController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123' for key 1
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$8.doInSqlMapClient(SqlMapClientTemplate.java:366)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 44 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123' for key 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1039)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2624)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2127)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1362)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 48 more
+2013-09-17 09:30:15  [ http-8080-1:113875 ] - [ INFO ]  requestUrl:http://localhost:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1234565","os":"android","deviceid":"12345678","android_version":"4.0.1","brands":"HTC","model":"H7","sdk_version":"1.0","socialkey":"7654321"}} ip:127.0.0.1 port:2637
+2013-09-17 10:14:51  [ http-8080-1:2790531 ] - [ INFO ]  requestUrl:http://localhost:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1234565","os":"android","deviceid":"12345678","android_version":"4.0.1","brands":"HTC","model":"H7","sdk_version":"1.0","socialkey":"7654321"}} ip:127.0.0.1 port:2951
+2013-09-17 10:14:51  [ http-8080-1:2790546 ] - [ INFO ]  Unexpect Exception
+org.springframework.dao.DuplicateKeyException: SqlMapClient operation; SQL [];   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1234565' for key 1; nested exception is com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1234565' for key 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:241)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:203)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.insert(SqlMapClientTemplate.java:364)
+	at info.anchora.mobilemonitor.dao.impl.InstallInfoDaoImpl.addInstallInfo(InstallInfoDaoImpl.java:13)
+	at info.anchora.mobilemonitor.service.impl.InstallInfoServiceImpl.addInstallInfo(InstallInfoServiceImpl.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy17.addInstallInfo(Unknown Source)
+	at info.anchora.mobilemonitor.controller.InstallMonitorController.create(InstallMonitorController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:426)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:414)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:790)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in sqlMaps/InstallMonitorEdm.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the InstallMonitorEdm.addInstallMonitor-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1234565' for key 1
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate$8.doInSqlMapClient(SqlMapClientTemplate.java:366)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)
+	... 44 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1234565' for key 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1039)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2624)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2127)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1362)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 48 more
+2013-09-17 10:17:01  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-17 10:17:02  [ main:47 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Tue Sep 17 10:17:02 CST 2013]; root of context hierarchy
+2013-09-17 10:17:02  [ main:109 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-17 10:17:02  [ main:406 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1edf84f: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,multipartResolver,ActivityInfoService,InstallInfoService]; root of factory hierarchy
+2013-09-17 10:17:02  [ main:437 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-17 10:17:02  [ main:781 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 781 ms
+2013-09-17 10:17:02  [ main:812 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-17 10:17:02  [ main:812 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Tue Sep 17 10:17:02 CST 2013]; parent: Root WebApplicationContext
+2013-09-17 10:17:02  [ main:828 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-17 10:17:03  [ main:1109 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1dba9f9: defining beans [dataBaseInitController,installMonitorController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1edf84f
+2013-09-17 10:17:03  [ main:1156 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-17 10:17:03  [ main:1156 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-17 10:17:03  [ main:1172 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-17 10:17:03  [ main:1172 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'installMonitorController'
+2013-09-17 10:17:03  [ main:1172 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'installMonitorController'
+2013-09-17 10:17:03  [ main:1172 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'installMonitorController'
+2013-09-17 10:17:03  [ main:1547 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 735 ms
+2013-09-17 10:17:16  [ http-8080-1:14734 ] - [ INFO ]  requestUrl:http://localhost:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"112233","os":"android","deviceid":"12345678","android_version":"4.0.1","brands":"HTC","model":"H7","sdk_version":"1.0","socialkey":"7654321"}} ip:127.0.0.1 port:2968
+2013-09-17 11:01:59  [ http-8080-1:2697641 ] - [ INFO ]  requestUrl:http://192.168.1.252:8080/api/mobilemonitor?&Information="Installed_info":{"uid":"1379386842testIphone","os":"iPhone OS","deviceid":"0:21:f2:1:3e:28","ios_version":"6.1.3","brands":"iPhone","model":"iPhone 3GS","sdk_version":"1"} ip:192.168.1.111 port:50262
+2013-09-17 11:03:47  [ http-8080-1:2805953 ] - [ INFO ]  requestUrl:http://192.168.1.252:8080/api/mobilemonitor?&Information={"Installed_info":{"uid":"1379386966testIphone","os":"iPhone OS","deviceid":"0:21:f2:1:3e:28","ios_version":"6.1.3","brands":"iPhone","model":"iPhone 3GS","sdk_version":"1"}} ip:192.168.1.111 port:50290
+2013-09-17 11:05:39  [ http-8080-1:2917969 ] - [ INFO ]  requestUrl:http://192.168.1.252:8080/api/mobilemonitor?&installinfo={"Installed_info":{"uid":"1379387085testIphone","os":"iPhone OS","deviceid":"0:21:f2:1:3e:28","ios_version":"6.1.3","brands":"iPhone","model":"iPhone 3GS","sdk_version":"1"}} ip:192.168.1.111 port:50318
+2013-09-17 13:40:01  [ main:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2013-09-17 13:40:02  [ main:156 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Tue Sep 17 13:40:02 CST 2013]; root of context hierarchy
+2013-09-17 13:40:02  [ main:250 ] - [ INFO ]  Loading XML bean definitions from file [D:\GXM\service\monitor\target\classes\spring\applicationContext.xml]
+2013-09-17 13:40:03  [ main:1047 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ad8bb4: defining beans [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,dataSource,transactionManager,transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0,sqlMapClient,mysqlDao,ActivityInfoDao,InstallInfoDao,multipartResolver,ActivityInfoService,InstallInfoService]; root of factory hierarchy
+2013-09-17 13:40:03  [ main:1094 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-09-17 13:40:03  [ main:1766 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1750 ms
+2013-09-17 13:40:03  [ main:1859 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization started
+2013-09-17 13:40:03  [ main:1859 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'mobilemonitor-servlet': startup date [Tue Sep 17 13:40:03 CST 2013]; parent: Root WebApplicationContext
+2013-09-17 13:40:03  [ main:1859 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/mobilemonitor-servlet.xml]
+2013-09-17 13:40:04  [ main:2922 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d50fd2: defining beans [dataBaseInitController,installMonitorController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,logAOPInterceptor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,jsonHttpMessageConverter,viewResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@ad8bb4
+2013-09-17 13:40:04  [ main:2969 ] - [ INFO ]  Mapped URL path [/database/init] onto handler 'dataBaseInitController'
+2013-09-17 13:40:04  [ main:2969 ] - [ INFO ]  Mapped URL path [/database/init.*] onto handler 'dataBaseInitController'
+2013-09-17 13:40:04  [ main:2969 ] - [ INFO ]  Mapped URL path [/database/init/] onto handler 'dataBaseInitController'
+2013-09-17 13:40:04  [ main:2984 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor] onto handler 'installMonitorController'
+2013-09-17 13:40:04  [ main:2984 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor.*] onto handler 'installMonitorController'
+2013-09-17 13:40:04  [ main:2984 ] - [ INFO ]  Mapped URL path [/api/mobilemonitor/] onto handler 'installMonitorController'
+2013-09-17 13:40:05  [ main:3687 ] - [ INFO ]  FrameworkServlet 'mobilemonitor': initialization completed in 1828 ms
+2013-09-17 13:41:47  [ http-8080-1:105312 ] - [ INFO ]  requestUrl:http://localhost:8080/api/mobilemonitor?&activityinfo={"Active_info":{"uid":"112233","launch_date":"2013-09-12"}} ip:127.0.0.1 port:1590
